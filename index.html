@@ -1,5 +1,44 @@
+<!DOCTYPE html>
 <html>
-    <body>
-        
-    </body>
+<head>
+  <title>PokéWordle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>PokéWordle</h1>
+
+  <div class="controls">
+    <select id="generation">
+      <option value="1">Generation 1 (1–151)</option>
+      <option value="all">All Generations</option>
+    </select>
+    <button onclick="startGame()">Start / Replay</button>
+  </div>
+
+  <div id="game" class="hidden">
+
+    <p>Guesses Left: <span id="guessesLeft">6</span></p>
+
+    <div class="guess-input">
+      <input type="text" id="guessInput" placeholder="Enter Pokémon name">
+      <button onclick="submitGuess()">Guess</button>
+    </div>
+
+    <div id="message"></div>
+
+    <div class="grid-header">
+      <div>Gen</div>
+      <div>Type 1</div>
+      <div>Type 2</div>
+      <div>Height</div>
+      <div>Weight</div>
+    </div>
+
+    <div id="results"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
