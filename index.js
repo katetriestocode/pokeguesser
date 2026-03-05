@@ -1,6 +1,6 @@
 let targetPokemon = null;
-let guessesLeft = 6;
-const maxGuesses = 6;
+let guessesLeft = 10;
+const maxGuesses = 10;
 
 async function startGame() {
   guessesLeft = maxGuesses;
@@ -71,11 +71,11 @@ function evaluateGuess(guess) {
   document.getElementById("results").appendChild(row);
 
   if (guess.name === targetPokemon.name) {
-    document.getElementById("message").innerText = "🎉 You Won!";
+    document.getElementById("message").innerText = "You Won!";
     guessesLeft = 0;
   } else if (guessesLeft === 0) {
     document.getElementById("message").innerText =
-      "💀 You Lost! It was " + targetPokemon.name;
+      "You Lost! It was " + targetPokemon.name;
   }
 }
 

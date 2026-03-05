@@ -1,7 +1,9 @@
 body {
   font-family: 'Helvetica';
   text-align: center;
-  background-image: url(https://cdn.mos.cms.futurecdn.net/4SgyNAYzEpMTmzmLtARouB.jpg);
+  background-image: url(https://legends.pokemon.com/_next/image?url=%2Fimages%2Fpages%2Fstory-world%2Fcharacters%2Fbg-your-character-xxl-2x.jpg&w=3840&q=75);
+  background-size: cover;
+  background-repeat: no-repeat;
   color: black;
   margin: 0;
 }
